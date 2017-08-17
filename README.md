@@ -14,6 +14,7 @@ For example: use this code to get all in-line ASCII arts from http://1lineart.ku
 then you just simple need to say that you are looking for class *artWork ng-binding* in *span* tag by loading the file and the following script.
 
 ```     
+        inputf = open('file.html', "r")
         input_soup = BeautifulSoup (inputf.read())
         ASCII  = input_soup.findAll("span", {"class":"artWork ng-binding"})
         print str(ASCII[i].contents[0])
